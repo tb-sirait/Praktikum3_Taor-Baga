@@ -4,32 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="TaorBaga.css">
+    <script>
+        window.onload = function()
+        {
+            var tekspembuka;
+            tekspembuka = "Selamat datang di website saya";
+            alert(tekspembuka);
+        }
+    </script>
+    <script type="text/javascript">
+        function submitted()
+        {
+            var subs = document.getElementById("div_submitted");
+            subs.innerHTML+="<p> Teks telah di submit <p>";
+        }
+    </script>
+    <title>105220031_TaorBaga</title>
 </head>
-<style>
-    .serdiscord{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 5px;
-        height: 5px;
-    }
-    .twit{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 1px;
-        height: 1px; 
-    }
-</style>
 <body>
-    <img src="tes.jpg" alt="TaorBaga">
-    <p>
-        <span style="color:blueviolet ">Halo ges, perkenalkan aku Taor Baga </span> <br>
+    <div style="text-align: center;">
+        <img src="tes.jpg" alt="TaorBaga" id="gambar">
+    </div>
+    <p style="text-align: center;">
+        <span>Halo ges, perkenalkan aku Taor Baga </span> <br>
         Sekarang, saya masih berkuliah jenjang S1 di Universitas Pertamina. <br>
         
     </p>
-    <table border="1">
+    <table class="tabel" border="1">
         <tr>
             <td>Nama Panjang</td>
             <td>Taor Baga</td>
@@ -51,28 +53,36 @@
     </table>
     <br>
     <br>
-    <span style="font-weight: bold; font-size: large;">Berikut Kontak Saya</span>
-    <table border="1">
+    <span>Berikut Kontak Saya</span>
+    <table class="tabel" border="1">
         <tr>
             <td>Server Discord</td>
             <td>
-                <button class= "serdiscord" onclick="window.location= 'https://discord.gg/87h5nEQT'"><img src='discrd.png'></button>
+                <button onclick="window.location= 'https://discord.gg/87h5nEQT'"">Discord</button>
             </td>
         </tr>
         <tr>
             <td>Twitter</td>
             <td>
-                <button id="twit" onclick="window.location= 'https://twitter.com/taorbs'"><img src="Twitter-logo.svg.png" alt=""></button>
+                <button id="twit" onclick="window.location= 'https://twitter.com/taorbs'">Twitter</button>
             </td>
+        </tr>
+        <tr>
+            <td>Instagram</td>
+            <td><button onclick="window.location= 'https://www.instagram.com/tb_sirait'">Instagram</button></td>
         </tr>
     </table>
     <br>
-    <form> 
+    <br>
+    <form id="forem"> <span>Tinggalkan Pesan</span> <br> <br>
         <label for="innama">Nama</label><br>
         <input type="text" id="innama" name="innama"><br>
         <label for="inkomen">Pesan</label><br>
         <textarea name="inkomen" id="inkomen" cols="30" rows="10"></textarea> <br>
         <input type="submit" value="Submit">
     </form>
+    <br>
+    <br>
+    <button id="tekan" onclick="submitted()">Tombol rahasia</button>
 </body>
 </html>

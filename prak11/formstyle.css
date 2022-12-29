@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+}
+body{
+    color: white;
+    background-color: rgb(31, 55, 99);
+    font-family: Arial, Helvetica, sans-serif;
+}
+input[type=text]{
+    width: 100%;
+    padding: 10px 17px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+select{
+    width: 100%;
+    padding: 10px 17px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
